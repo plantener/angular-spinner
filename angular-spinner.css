@@ -28,8 +28,9 @@
   vertical-align: middle;
   position: relative; }
 
-.plantener-spinner > .plantener-spinner-body > .plantener-loading-spinner {
-  position: relative; }
+.plantener-spinner > .plantener-spinner-body > .plantener-spinner-spinner {
+  position: relative;
+  padding-left: 20px; }
 
 .plantener-spinner > .plantener-spinner-body > .plantener-spinner-text {
   position: relative;
