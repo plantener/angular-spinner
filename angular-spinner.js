@@ -95,7 +95,7 @@
        return {
          link: function (scope, element, attrs) {
            var spinner = null,
-             key = attrs.dwLoading || false,
+             key = attrs.plantenerSpinner || false,
              options,
              container,
              body,
@@ -145,6 +145,14 @@
                    text = angular.element('<div></div>')
                      .addClass('plantener-spinner-text')
                      .text(options.text);
+
+                     if (options.spinnerOptions.top){
+                       console.log(options.spinnerOptions.top);
+                       text.css('top: ' + options.spinnerOptions.top);
+                     }
+                     //.css('top: ' + options.top);
+
+
                    body.append(text);
                  }
 
