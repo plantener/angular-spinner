@@ -27,6 +27,7 @@
        className: '', // Custom class, added to directive
        overlay: true, // Display overlay
        spinner: true, // Display spinner
+       valign: 'middle', // Vertical alignment of the spinner
        spinnerOptions: {
          lines: 12, // The number of lines to draw
          length: 7, // The length of each line
@@ -41,7 +42,7 @@
          opacity: 1 / 4, // Opacity of the lines
          fps: 20, // Frames per second when using setTimeout()
          zIndex: 2e9, // Use a high z-index by default
-         className: 'dw-spinner', // CSS class to assign to the element
+         className: 'plantener-spin', // CSS class to assign to the element
          top: 'auto', // Center vertically
          left: '50%', // Center horizontally
          position: 'relative' // Element position
@@ -129,6 +130,9 @@
                    .addClass('plantener-spinner')
                    .append(body);
 
+                 if (options.valign !== 'middle'){
+                   body.css('vertical-align', options.valign);
+                 }
                  if (options.overlay) {
                    container.addClass('plantener-spinner-overlay');
                  }
