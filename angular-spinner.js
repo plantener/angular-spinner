@@ -146,12 +146,9 @@
                      .addClass('plantener-spinner-text')
                      .text(options.text);
 
-                     if (options.spinnerOptions.top){
-                       console.log(options.spinnerOptions.top);
-                       text.css('top: ' + options.spinnerOptions.top);
+                     if (options.spinnerOptions.top.indexOf('px') > -1){
+                       text.css('top', parseFloat(options.spinnerOptions.top) + 25 + 'px'); // 25px is the default styling
                      }
-                     //.css('top: ' + options.top);
-
 
                    body.append(text);
                  }
