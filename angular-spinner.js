@@ -43,7 +43,7 @@
          zIndex: 2e9, // Use a high z-index by default
          className: 'dw-spinner', // CSS class to assign to the element
          top: 'auto', // Center vertically
-         left: 'auto', // Center horizontally
+         left: '50%', // Center horizontally
          position: 'relative' // Element position
        }
      })
