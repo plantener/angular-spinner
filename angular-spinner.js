@@ -84,9 +84,9 @@
         * Deactivates loading state by key
         * @param {string} key
         */
-       self.finish = function (key) {
+       self.stop = function (key) {
          $rootScope.$evalAsync(function() {
-           $rootScope.$broadcast('$loadingFinish', key);
+           $rootScope.$broadcast('$loadingStopped', key);
          });
        };
      }])
@@ -118,7 +118,7 @@
             * Update spinner, use force to update when loader is already started
             */
            var update = function (newOptions, force) {
-                 finish();
+                 stop();
 
                  options = extend(true, {}, spinnerOptions, newOptions);
 
@@ -163,7 +163,7 @@
            /**
             * Stops spinner
             */
-           var finish = function () {
+           var stop = function () {
              if (container) {
                container.removeClass('plantener-spinner-active');
              }
@@ -188,14 +188,14 @@
              }
            });
 
-           $rootScope.$on('$loadingFinish', function (event, loadKey) {
+           $rootScope.$on('$loadingStopped', function (event, loadKey) {
              if (loadKey === key) {
-               finish();
+               stop();
              }
            });
 
            scope.$on('$destroy', function () {
-             finish();
+             stop();
              spinner = null;
            });
          }
