@@ -1,9 +1,9 @@
 # angular-spinner
 
-AngularJS directive that lets you prevent user interaction on parts of the page using an adjustable spinner. (based on spin.js and darthwade/angular-loading)
+Angular-spinner is an AngularJS directive that lets you prevent user interaction on parts of the page using an adjustable spinner. (based on [spin.js](https://github.com/fgnass/spin.js/) and [darthwade/angular-loading](https://github.com/darthwade/angular-loading))
 
 
-**Demo:** http://embed.plnkr.co/XLL3li/preview // TODO: Make new demo
+**Demo:** Under construction
 
 ## Installation
 
