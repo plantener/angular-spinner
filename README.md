@@ -37,7 +37,11 @@ Add `plantener-spinner` directive to that block which you want to lock during lo
 <div plantener-spinner="key" plantener-spinner-options="options"></div>
 ```
 
-## Example
+## Examples
+
+### Basic Usage
+
+### With options
 
 ``` html
 <div plantener-spinner="usersSpinner" plantener-spinner-options="{text: 'Loading...'}">
