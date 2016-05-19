@@ -1,10 +1,3 @@
-/**
- * Angular Spinner
- * @homepage https://github.com/plantener/angular-spinner
- * @author Jesper Plantener https://github.com/plantener
- * @license The MIT License (http://www.opensource.org/licenses/mit-license.php)
- * @copyright 2016 Jesper Plantener
- */
  (function (factory) {
    if (typeof define === 'function' && define.amd) {
      // AMD
